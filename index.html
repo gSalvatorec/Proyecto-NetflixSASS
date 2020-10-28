@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,54 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
-
-
+    <header class="site-header">
+        <img src="img/logo.svg" alt="Logotipo">
+    </header>
+    <main class="formulario-login">
+        <form action="#">
+            <legend>Inicia Sesión</legend>
+            <div class="campo">
+                <input type="text" id="usuario">
+                <label for="">Email o Numero de Telefono</label>
+            </div>
+            <div class="campo">
+                <input type="password" id="clave">
+                <label for="">Contraseña</label>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Iniciar Sesion">
+            </div>
+            <div class="acciones">
+                <div class="recuerdame">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Recuerdame</label>
+                </div>
+                <div class="ayuda">
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+            </div>
+        </form>
+        <div class="contenido-inferior">
+            <a href="#">Iniciar Sesión con Facebook</a>
+            <a href="#" class="nuevo-usuario">¿Primera vez en Netflix? <span>Subscribete ya</span></a>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="contenedor">
+            <p>Preguntas? llama al 5284444826</p>
+            <nav class="menu-footer">
+                <a href="#">Terminos de las Tarjetas de Regalo</a>
+                <a href="#">Terminos de usos</a>
+                <a href="#">Declaracion de privacidad</a>
+            </nav>
+        </div>
+        <select name="" id="" class="lenguaje">
+            <option value="eng">English</option>
+            <option value="es">Español</option>
+        </select>
+    </footer>
 </body>
+
 </html>
