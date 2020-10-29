@@ -59,20 +59,20 @@ a:hover {
   }
 }
 
-form legend {
+.formulario-login form legend {
   color: white;
   font-size: 2rem;
   margin: 2rem 0;
   font-weight: bold;
 }
 
-form .campo {
+.formulario-login form .campo {
   display: flex;
   position: relative;
   margin-bottom: .8rem;
 }
 
-form .campo label {
+.formulario-login form .campo label {
   position: absolute;
   top: 1.1rem;
   left: 1rem;
@@ -80,7 +80,7 @@ form .campo label {
   transition: font-size .2s ease, top .2s ease;
 }
 
-form .campo input {
+.formulario-login form .campo input {
   flex: 1;
   padding: 1.3rem 1rem .7rem 1rem;
   border: none;
@@ -88,22 +88,22 @@ form .campo input {
   border-radius: 5px;
 }
 
-form .campo input:focus {
+.formulario-login form .campo input:focus {
   background-color: #454545;
   outline: none;
 }
 
-form .campo input:focus + label {
+.formulario-login form .campo input:focus + label {
   font-size: .6rem;
   top: .5rem;
 }
 
-form .submit {
+.formulario-login form .submit {
   display: flex;
   margin-top: 2rem;
 }
 
-form .submit input[type="submit"] {
+.formulario-login form .submit input[type="submit"] {
   background-color: #E50914;
   color: #FFFFFF;
   display: block;
@@ -116,19 +116,100 @@ form .submit input[type="submit"] {
   padding: 1rem 0;
 }
 
-form .submit input[type="submit"]:hover {
+.formulario-login form .submit input[type="submit"]:hover {
   cursor: pointer;
 }
 
-form .acciones {
+.formulario-login form .acciones {
   display: flex;
   justify-content: space-between;
   padding: .5rem 0;
   margin: .5rem 0 8rem 0;
 }
 
-form .acciones label,
-form .acciones a {
+.formulario-login form .acciones label,
+.formulario-login form .acciones a {
   font-size: .8rem;
   text-decoration: none;
+}
+
+.formulario-login .contenido-inferior {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .formulario-login .contenido-inferior {
+    padding-bottom: 1rem;
+  }
+}
+
+.formulario-login .contenido-inferior a {
+  font-size: .8rem;
+}
+
+.formulario-login .contenido-inferior .nuevo-usuario {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.formulario-login .contenido-inferior .nuevo-usuario a {
+  color: #FFFFFF;
+  margin-left: .5rem;
+  font-size: 1rem;
+}
+
+.site-footer {
+  border-top: 1px solid #8C8C8C;
+  padding: 2rem 0 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    borber-top: unset;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1rem 0 3rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-footer .contenedor {
+    max-width: 50%;
+  }
+}
+
+.site-footer .menu-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .site-footer .menu-footer {
+    max-width: 50%;
+  }
+}
+
+.site-footer .menu-footer a {
+  flex: 0 0 auto;
+  font-size: .8rem;
+  margin-right: 2rem;
+  padding: .5rem 0;
+}
+
+.site-footer .menu-footer a:last-of-type {
+  margin-right: 0;
+}
+
+.site-footer select {
+  margin-top: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1rem 3rem;
+  border: 1px solid #454545;
+  border-radius: .5rem;
+  font-size: .8rem;
+  background-color: #000000;
+  color: #8C8C8C;
 }
