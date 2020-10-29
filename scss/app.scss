@@ -36,6 +36,20 @@ a {
     margin: 0 auto;
 }
 
+.alerta {
+    color: $secundario;
+    display: block;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    padding: .2rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+input .no-valido {
+    border-bottom: 2px solid $secundario!important;
+}
+
 .logotipo {
     margin-top: .5rem;
     max-width: 100px;
@@ -63,12 +77,22 @@ a {
             display: flex;
             position: relative;
             margin-bottom: .8rem;
+            span {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                text-transform: uppercase;
+            }
             label {
                 position: absolute;
                 top: 1.1rem;
                 left: 1rem;
                 font-size: .9rem;
                 transition: font-size .2s ease, top .2s ease;
+                &.valido {
+                    font-size: .6rem;
+                    top: .5rem;
+                }
             }
             input {
                 flex: 1;
@@ -76,6 +100,7 @@ a {
                 border: none;
                 background-color: $gris;
                 border-radius: 5px;
+                color: $blanco;
                 &:focus {
                     background-color: $gris3;
                     outline: none;
