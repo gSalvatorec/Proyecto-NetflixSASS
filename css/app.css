@@ -166,7 +166,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .site-footer {
-    borber-top: unset;
+    border-top: unset;
     background-color: rgba(0, 0, 0, 0.85);
     padding: 1rem 0 3rem 0;
   }

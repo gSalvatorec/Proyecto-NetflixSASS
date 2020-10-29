@@ -134,7 +134,7 @@ a {
     border-top: 1px solid $gris2;
     padding: 2rem 0 4rem 0;
     @include tablet {
-        borber-top: unset;
+        border-top: unset;
         background-color: rgba(0, 0, 0, 0.85);
         padding: 1rem 0 3rem 0;
     }
